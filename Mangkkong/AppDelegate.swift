@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import KakaoOpenSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -41,6 +42,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    func application(_ application: UIApplication,open url: URL, sourceApplication: String?, annotation : Any) -> Bool {
+        if KOSession.isKakaoAccountLoginCallback(url){
+            return KOSession.handleOpen(url)
+        }
+        return true;
+    }
+    
+    private func application(_app: UIApplication, open url: URL, options: [String : AnyObject] = [:] ) -> Bool {
+        if KOSession.isKakaoAccountLoginCallback(url){
+            return KOSession.handleOpen(url)
+        }
+        return true;
+    }
+    
+    func applicationDidBecomeActice(_ application: UIApplication) {
+        KOSession.handleDidBecomeActive()
+    }
 
 }
 

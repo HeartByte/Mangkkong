@@ -14,6 +14,7 @@
 		212CA5E221611D2700A2A269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212CA5E021611D2700A2A269 /* LaunchScreen.storyboard */; };
 		212CA5ED21611D2800A2A269 /* MangkkongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212CA5EC21611D2800A2A269 /* MangkkongTests.swift */; };
 		212CA5F821611D2800A2A269 /* MangkkongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212CA5F721611D2800A2A269 /* MangkkongUITests.swift */; };
+		21B448BB216B50B5000A8E86 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B448BA216B50B5000A8E86 /* KakaoOpenSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		212CA5F321611D2800A2A269 /* MangkkongUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangkkongUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		212CA5F721611D2800A2A269 /* MangkkongUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MangkkongUITests.swift; sourceTree = "<group>"; };
 		212CA5F921611D2800A2A269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21B448BA216B50B5000A8E86 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		21B448BC216B516D000A8E86 /* Briging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Briging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21B448BB216B50B5000A8E86 /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +81,8 @@
 		212CA5CB21611D2100A2A269 = {
 			isa = PBXGroup;
 			children = (
+				21B448BC216B516D000A8E86 /* Briging-Header.h */,
+				21B448B9216B5033000A8E86 /* Frameworks */,
 				212CA5D621611D2100A2A269 /* Mangkkong */,
 				212CA5EB21611D2800A2A269 /* MangkkongTests */,
 				212CA5F621611D2800A2A269 /* MangkkongUITests */,
@@ -123,6 +129,14 @@
 				212CA5F921611D2800A2A269 /* Info.plist */,
 			);
 			path = MangkkongUITests;
+			sourceTree = "<group>";
+		};
+		21B448B9216B5033000A8E86 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				21B448BA216B50B5000A8E86 /* KakaoOpenSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,6 +381,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -421,6 +436,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -434,6 +450,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DH7QQAKU2K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Mangkkong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -441,6 +461,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mangkkong.Mangkkong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Briging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,6 +473,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DH7QQAKU2K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Mangkkong/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -459,6 +484,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Mangkkong.Mangkkong;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Briging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
