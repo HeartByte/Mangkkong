@@ -22,9 +22,9 @@ class ViewController: UIViewController {
     
     
     @IBAction func kakaologinone(_ sender: Any) {
-        let session = KOSession.shared()
+        let sessionone = KOSession.shared()
         //세션완성
-        if let s = session {
+        if let s = sessionone {
             //이전 열린 세션 닫기
             if s.isOpen() {
                 s.close()

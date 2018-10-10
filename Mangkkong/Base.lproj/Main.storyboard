@@ -22,7 +22,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="kakaologin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tik-Ym-Iwo"/>
                                     <action selector="kakaologinone:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Dv-5x-6j8"/>
                                 </connections>
                             </view>
