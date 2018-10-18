@@ -15,6 +15,8 @@
 		212CA5ED21611D2800A2A269 /* MangkkongTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212CA5EC21611D2800A2A269 /* MangkkongTests.swift */; };
 		212CA5F821611D2800A2A269 /* MangkkongUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212CA5F721611D2800A2A269 /* MangkkongUITests.swift */; };
 		21B448BB216B50B5000A8E86 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21B448BA216B50B5000A8E86 /* KakaoOpenSDK.framework */; };
+		896E75A52178A92D00879141 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896E75A42178A92D00879141 /* Menu.storyboard */; };
+		896E75A72178A95600879141 /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896E75A62178A95600879141 /* MenuController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		212CA5F921611D2800A2A269 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		21B448BA216B50B5000A8E86 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		21B448BC216B516D000A8E86 /* Briging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Briging-Header.h"; sourceTree = "<group>"; };
+		896E75A42178A92D00879141 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		896E75A62178A95600879141 /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 				212CA5DE21611D2700A2A269 /* Assets.xcassets */,
 				212CA5E021611D2700A2A269 /* LaunchScreen.storyboard */,
 				212CA5E321611D2700A2A269 /* Info.plist */,
+				896E75A42178A92D00879141 /* Menu.storyboard */,
+				896E75A62178A95600879141 /* MenuController.swift */,
 			);
 			path = Mangkkong;
 			sourceTree = "<group>";
@@ -246,6 +252,7 @@
 				212CA5E221611D2700A2A269 /* LaunchScreen.storyboard in Resources */,
 				212CA5DF21611D2700A2A269 /* Assets.xcassets in Resources */,
 				212CA5DD21611D2100A2A269 /* Main.storyboard in Resources */,
+				896E75A52178A92D00879141 /* Menu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				212CA5DA21611D2100A2A269 /* ViewController.swift in Sources */,
+				896E75A72178A95600879141 /* MenuController.swift in Sources */,
 				212CA5D821611D2100A2A269 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
